@@ -1,0 +1,34 @@
+.card {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+
+  &.flipped {
+    transform: rotateY(0deg);
+  }
+
+  &__front {
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+  }
+
+  &__back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: orange;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+  }
+}

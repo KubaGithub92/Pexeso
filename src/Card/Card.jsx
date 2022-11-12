@@ -1,4 +1,5 @@
 import React from "react";
+import "./Card.scss";
 
 export default function Card({
   card,
@@ -18,9 +19,9 @@ export default function Card({
 
   return (
     <div className="card">
-      <img className="card-front" src={card.src} alt="front of a card"></img>
+      <img className="card__front" src={card.src} alt="front of a card"></img>
       <img
-        className="card-back"
+        className="card__back"
         src={cardBack}
         alt="back of a card"
         onClick={flipCard}
