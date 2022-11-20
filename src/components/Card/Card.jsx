@@ -4,9 +4,6 @@ import "./Card.scss";
 export default function Card({
   card,
   cardBack,
-  // setCardFlippedOne,
-  // setCardFlippedTwo,
-  // cardFlippedOne,
   flipped,
   inactive,
   cardClicked,
